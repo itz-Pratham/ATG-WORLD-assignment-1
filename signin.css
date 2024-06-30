@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 950px;
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    width: 97.9%;
+    background-color:#EFFFF4;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+
+header p {
+    padding: 10px 20px;
+    margin: 0;
+    margin-top: 10px !important;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    color: #008A45;
+    font-weight: 540;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-in-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.sign-in-box h1 {
+    text-align: left;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.sign-in-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in-box input {
+    padding: 16px;
+    /* margin: 10px 0; */
+    border: 1px solid #ccc;
+    font-size: 16px;
+    /* border-radius: 5px; */
+}
+
+.sign-in-box button[type="submit"] {
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.sign-in-box .social-signin {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in-box .social-signin button {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-in-box .social-signin .facebook {
+    /* background-color: #3b5998; */
+    color: black;
+}
+
+.sign-in-box .social-signin .facebook:hover {
+    background-color: #2d4373;
+    color: white;
+}
+
+.sign-in-box .social-signin .google {
+    /* background-color: #db4437; */
+    color: black;
+}
+
+.sign-in-box .social-signin .google:hover {
+    background-color: #c23321;
+    color: white;
+}
+
+.sign-in-box .forgot-password {
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sign-in-box .sign-up {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.sign-in-box .sign-up a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.illustration {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+}

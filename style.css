@@ -1,0 +1,349 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+header {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .hcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 30px;
+    color: #333;
+    text-decoration: none;
+}
+
+.search-bar input {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+/* Banner Styles */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 440px;
+    background: url('https://s3-alpha-sig.figma.com/img/756e/302b/7d56a759ac56bc165f65c40094aba4e8?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lk~fzgvH~P0wGs9MPCskERhDmnHq4aJSPiyK6~JSvA9byyi1flOuuyutNpADwCe7UBJ9TQC5543EPUfoxhVmkgYTjkIIY1mp2NzqjDIsEruZPsdO2hQ5sFyRhghHJ83jisasg6~sMnfl5gVxRvi-vFXVjDFVvdRlg67SyeFoYCnroduPwVLhDhKrCSGb52ySy~7S1XRWCu~M9997KYr-QSZ~V~EknpnL4DxsEX2wQK0BMY1HlCYV5omVfLA2MwMtHbLshtOfWJW-5GtaIZYiPUeIIUSuqUP199-CSsFdzD61Yj6qKgxBt1raBLBrglLQcMCihcglw3sEPSRvHNYEYw__') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0 0 0 2000px rgba(95, 95, 95, 0.3);
+}
+
+.banner-content {
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+/* Main Content Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 11%;
+    max-width: 1300px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 7vh;
+    gap: 20px;
+}
+
+.filters .filter-btn:hover {
+    color: rgb(53, 124, 138);
+}
+
+.filters .filter-btn {
+    border: none;
+    background-color: white;
+}
+
+.filters .active {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.filters .all {
+    min-width: 7.5vw;
+}
+
+.filters .write-post,
+.filters .join-group {
+    padding: 7px;
+    border-radius: 10px;
+    color: #fff !important;
+    background-color: #2F6CE5;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.filters .write-post {
+    margin-left: auto;
+    background-color: #EDEEF0;
+    color: #333 !important;
+}
+
+.abc {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.posts {
+    margin-top: 1%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.location {
+    margin-top: 8vh;
+}
+
+.location input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.location p {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 0.1mm;
+}
+
+/* Post Styles */
+.post, .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 692px;
+}
+
+.post img, .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.post-content, .card-body {
+    padding: 15px;
+}
+
+.post-category {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.post-content h2, .card-body h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.post-content p, .card-body p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card-body span {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 15px;
+    margin-right: 50px;
+}
+
+.Website, .Timejobs {
+    padding: 10px;
+    text-align: center;
+    color: red;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.Timejobs {
+    color: rgb(40, 173, 62);
+}
+
+.post-footer, .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.social-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.social-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+        margin: 0 5%;
+    }
+    .posts {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 700px;
+    }
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+    .filters .filter-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .abc {
+        flex-direction: column;
+    }
+    .location {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 300px;
+    }
+    .banner-content {
+        bottom: 10%;
+        left: 10%;
+    }
+    .banner h1 {
+        font-size: 2em;
+    }
+    .banner p {
+        font-size: 1em;
+    }
+    .container {
+        max-width: 500px;
+    }
+    .post-content, .card-body {
+        padding: 10px;
+    }
+    .post-content h2, .card-body h2 {
+        font-size: 18px;
+    }
+    .post-content p, .card-body p {
+        font-size: 12px;
+    }
+    .social-actions button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 200px;
+    }
+    .banner-content {
+        bottom: 5%;
+        left: 5%;
+    }
+    .banner h1 {
+        font-size: 1.5em;
+    }
+    .banner p {
+        font-size: 0.8em;
+    }
+    .container {
+        max-width: 300px;
+    }
+    .post-content, .card-body {
+        padding: 5px;
+    }
+    .post-content h2, .card-body h2 {
+        font-size: 14px;
+    }
+    .post-content p, .card-body p {
+        font-size: 10px;
+    }
+    .social-actions button {
+        font-size: 10px;
+    }
+    .filters .filter-btn,
+    .filters .write-post,
+    .filters .join-group {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .filters {
+        flex-direction: column;
+    }
+    .abc {
+        flex-direction: column;
+    }
+}
